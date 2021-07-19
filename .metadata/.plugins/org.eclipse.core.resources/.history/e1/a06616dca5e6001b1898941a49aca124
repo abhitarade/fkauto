@@ -1,0 +1,16 @@
+package auto.Unitsteps;
+
+import auto.Methods.UseMethod;
+
+public class TestFunction 
+{
+
+	public static void main(String[] args) 
+	{
+	
+	//browser launching	
+		Object [] bl =new Object[1];
+		
+
+	}
+}

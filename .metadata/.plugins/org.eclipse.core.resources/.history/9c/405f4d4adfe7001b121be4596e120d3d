@@ -1,0 +1,57 @@
+package flipkart;
+
+import auto.Methods.UseMethod;
+
+public class TestFlipkart {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		
+		//browser launching	
+				Object [] bl =new Object[1];
+				bl[0]="chrome";
+				UseMethod.LaunchBrowser(bl);
+				
+		//get url
+				Object [] geturl=new Object[1];
+				geturl[0]="https://www.flipkart.com/";
+				UseMethod.Geturl(geturl);
+		
+		// dismiss initial login window
+				Object []dis =new Object[1];
+				dis[0]="//button[contains(text(),'✕')]";
+				UseMethod.Clickit(dis);
+				
+		// move to login button
+				Object [] mtl=new Object[1];
+				mtl[0]="//a[normalize-space()='Login']";
+				UseMethod.MouseOn(mtl);
+		
+		// click on my profile
+				Object [] mp =new Object[1];
+				mp[0]="//div[normalize-space()='My Profile']";
+				UseMethod.Clickit(mp);
+		
+		// send username
+				Object [] un=new Object[2];
+				un[0]="//input[@class='_2IX_2- VJZDxU']";
+				un[1]="9922963325";
+				UseMethod.Sendkey(un);
+				
+		// send password
+				Object [] pass = new Object[2];
+				pass[0]="";
+				pass[1]="Abhi@123";
+				
+		// click login
+				Object [] ln =new Object[1];
+				ln[0]="//button[@class='_2KpZ6l _2HKlqd _3AWRsL']";
+				UseMethod.Clickit(ln);
+				
+				
+				
+		// close driver by waiting some time
+				UseMethod.CloseDriver(20000);
+	}
+
+}

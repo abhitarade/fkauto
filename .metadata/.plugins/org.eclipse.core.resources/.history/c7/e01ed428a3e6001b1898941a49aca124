@@ -1,0 +1,13 @@
+package auto.Unitsteps;
+
+import auto.Methods.UseMethod;
+
+public class TestFunction {
+
+	public static void main(String[] args) 
+	{
+		UseMethod.Try("Abhi", 29);
+
+	}
+
+}
